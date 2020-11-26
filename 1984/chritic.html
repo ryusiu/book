@@ -8,6 +8,37 @@
     </head>
     <body>
         <h1><strong><a href="../index.html"><img src="../icon2.jpg" width="50px" height="50px">Book duck</a></strong></h1>
+        <script>
+            var alist = document.querySelectorAll('a');
+            i = 0;
+            while(i<alist.length){alist[i].style.color = 'black';
+                i=i+1;
+            };
+        </script>
+        <input id="night_day" type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if(this.value ==='night')
+        {
+            target.style.backgroundColor='#1f2023';
+            target.style.color='#ddd';
+            this.value='day';
+            var alist = document.querySelectorAll('a');
+            i = 0;
+            while(i<alist.length){alist[i].style.color = 'powderblue';
+                i=i+1;
+            };
+        }
+        else{
+            target.style.backgroundColor='#fff';
+            target.style.color='#373a3c';
+            this.value='night';
+            var alist = document.querySelectorAll('a');
+            i = 0;
+            while(i<alist.length){alist[i].style.color = 'black';
+                i=i+1;
+            };
+        }
+        ">
         <div id="structure">    
             <ul>           
                 <li style="padding-top:30px"><a href="introduce.html">Introduce</a></li>
